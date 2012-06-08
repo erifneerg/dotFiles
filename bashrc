@@ -7,3 +7,8 @@ source "`brew --prefix grc`/etc/grc.bashrc"
 
 #force 256 when possible
 export TERM=xterm-256color
+
+# ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
