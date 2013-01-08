@@ -12,7 +12,8 @@ build/*
 *.pbxuser
 *.xcworkspace
 xcuserdata
-
+#vim undos
+*.un
 # svn & cvs
 .svn
 CVS
