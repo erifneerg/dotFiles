@@ -14,6 +14,7 @@ build/*
 xcuserdata
 #vim undos
 *.un
+*.swp
 # svn & cvs
 .svn
 CVS
