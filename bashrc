@@ -20,7 +20,8 @@ export PATH=$PATH:/Applications/MAMP/Library/bin
 
 #short hand
 alias clr='clear'
-alias gittower='gt'
+alias gt='gittower'
+alias vrc='vim ~/.vimrc' 
 #apache
 alias apstart='sudo apachectl start'
 alias apstop='sudo apachectl stop'
