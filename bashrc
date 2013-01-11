@@ -51,6 +51,7 @@ alias bd='brew doctor'
 alias bl='brew link'
 #gem 
 alias gu='sudo gem update'
+alias o='open'
 #mac 
 alias oa='open -a'
 #youtubedownloader
