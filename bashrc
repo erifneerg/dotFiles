@@ -4,7 +4,8 @@ export PS1="\n\u\e[0;32m@\e[m\h \w\n>"
 PATH="/usr/local/bin:$PATH"
 #Start tmux
 #[[ $TERM = "xterm" ]] && { tmux && exit 0; }
-
+./usr/local/Cellar/drush/5.8/
+libexec/drush
 ## for tmux: export 256color
 #force 256 when possible
 export TERM=xterm-256color
@@ -41,6 +42,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 # apps
+alias otx="open -a textual"
 alias pb='pianobar'
 alias dr='drush'
 alias v='vim'
