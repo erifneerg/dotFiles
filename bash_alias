@@ -1,0 +1,54 @@
+###########
+#Alias fun!
+###########
+
+#short hand
+alias c='clear'
+alias gt='gittower'
+alias vrc='vim ~/.vimrc' 
+#apache
+alias apstart='sudo apachectl start'
+alias apstop='sudo apachectl stop'
+alias vh='vim /etc/hosts' 
+#apache mac
+#alias vvh="vim /applications/MAMP/conf/apache/httpd.conf"
+alias vvh="vim /applications/MAMP/conf/apache/httpd-vhosts.conf"
+#tmux 
+alias tmux='tmux -2'
+alias vt='vim ~/.tmux.conf' 
+alias ta='tmux attach'
+alias t='tmux'
+#bash
+alias vbr='vim ~/.bashrc'
+alias vbp='vim ~/.bash_profile'
+alias rb='source ~/.bashrc && source ~/.bash_profile && echo .bashrc and .bash_profile have been reloaded'
+#ls 
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+# apps
+alias otx="open -a textual"
+alias pb='pianobar'
+alias dr='drush'
+alias v='vim'
+alias g='git'
+alias ed='ed -p:'
+# brew  
+alias bu='brew update'
+alias buu='brew update && brew upgrade'
+alias bd='brew doctor'
+alias bl='brew link'
+#gem 
+alias gu='sudo gem update'
+alias o='open'
+#mac 
+alias clearCore="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo 'Open With has been rebuilt, Finder will relaunch'"
+alias oa='open -a'
+#youtubedownloader
+alias ytd='youtube-dl'
+alias ytda='youtube-dl --extract-audio --audio-format m4a' 
+#SASS & Compass
+alias cw='compass watch'
+alias cwd='compass watch --debug-info'
+#SSH
+alias smt='ssh tingreendoor.com@s85361.gridserver.com' 
