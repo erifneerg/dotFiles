@@ -28,6 +28,7 @@ alias la='ls -A'
 alias l='ls -CF'
 # apps
 alias otx="open -a textual"
+alias ztx="open -a textual && znc"
 alias pb='pianobar'
 alias dr='drush'
 alias v='vim'
