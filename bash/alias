@@ -1,5 +1,5 @@
 ###########
-#Alias fun!
+#alias fun!
 ###########
 
 #short hand
@@ -13,6 +13,10 @@ alias vh='vim /etc/hosts'
 #apache mac
 #alias vvh="vim /applications/MAMP/conf/apache/httpd.conf"
 alias vvh="vim /applications/MAMP/conf/apache/httpd-vhosts.conf"
+alias mapStr="sudo /applications/MAMP/bin/startApache.sh"
+alias mapStp="sudo /applications/MAMP/bin/stopApache.sh"
+alias mapRst="sudo /applications/MAMP/bin/stopApache.sh && sudo /applications/MAMP/bin/startApache.sh"
+alias mamp="open -a /Applications/MAMP/MAMP.app"
 #tmux 
 alias tmux='tmux -2'
 alias vt='vim ~/.tmux.conf' 

@@ -1,0 +1,9 @@
+export EDITOR="vim"
+export PATH="/usr/local/bin:$PATH"
+
+#force 256 when possible
+export TERM=xterm-256color
+export TERM=screen-256color
+#Drush Settings
+#export DRUSH_PHP=/Applications/MAMP/bin/php/php5.4.4/bin/php
+#export PATH=$PATH:/Applications/MAMP/Library/bin
