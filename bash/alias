@@ -13,9 +13,9 @@ alias vh='vim /etc/hosts'
 #apache mac
 #alias vvh="vim /applications/MAMP/conf/apache/httpd.conf"
 alias vvh="vim /applications/MAMP/conf/apache/httpd-vhosts.conf"
-alias mapStr="sudo /applications/MAMP/bin/startApache.sh"
-alias mapStp="sudo /applications/MAMP/bin/stopApache.sh"
-alias mapRst="sudo /applications/MAMP/bin/stopApache.sh && sudo /applications/MAMP/bin/startApache.sh"
+alias mapstr="sudo /applications/MAMP/bin/startApache.sh"
+alias mapstp="sudo /applications/MAMP/bin/stopApache.sh"
+alias maprs="sudo /applications/MAMP/bin/stopApache.sh && sudo /applications/MAMP/bin/startApache.sh"
 alias mamp="open -a /Applications/MAMP/MAMP.app"
 #tmux 
 alias tmux='tmux -2'
@@ -23,9 +23,8 @@ alias vt='vim ~/.tmux.conf'
 alias ta='tmux attach'
 alias t='tmux'
 #bash
-alias vbr='vim ~/.bashrc'
-alias vbp='vim ~/.bash_profile'
-alias rb='source ~/.bashrc && source ~/.bash_profile && echo .bashrc and .bash_profile have been reloaded'
+alias vba='vim ~/dotfiles/bash/alias'
+alias rb='source ~/.bashrc && echo .bashrc has been reloaded'
 #ls 
 alias ll='ls -alF'
 alias la='ls -A'
@@ -57,3 +56,10 @@ alias cw='compass watch'
 alias cwd='compass watch --debug-info'
 #SSH
 alias smt='ssh tingreendoor.com@s85361.gridserver.com' 
+#functions
+#go Drupal Site
+function sf {
+  cd ~/Sites/$1
+  }
+#go Drupal Site
+alias drt='cd sites/all/themes'
