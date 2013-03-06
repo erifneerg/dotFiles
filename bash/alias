@@ -17,6 +17,7 @@ alias mapstr="sudo /applications/MAMP/bin/startApache.sh"
 alias mapstp="sudo /applications/MAMP/bin/stopApache.sh"
 alias maprs="sudo /applications/MAMP/bin/stopApache.sh && sudo /applications/MAMP/bin/startApache.sh"
 alias mamp="open -a /Applications/MAMP/MAMP.app"
+#add mysql
 #tmux 
 alias tmux='tmux -2'
 alias vt='vim ~/.tmux.conf' 
@@ -31,7 +32,7 @@ alias la='ls -A'
 alias l='ls -CF'
 # apps
 alias otx="open -a textual"
-alias ztx="open -a textual && znc"
+alias ztx="znc; open -a textual"
 alias pb='pianobar'
 alias dr='drush'
 alias v='vim'
