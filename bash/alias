@@ -53,6 +53,7 @@ alias oa='open -a'
 alias ytd='youtube-dl'
 alias ytda='youtube-dl --extract-audio --audio-format m4a' 
 #SASS & Compass
+alias cwl='compass watch && open -a livereload'
 alias cw='compass watch'
 alias cwd='compass watch --debug-info'
 #SSH
@@ -64,3 +65,8 @@ function sf {
   }
 #go Drupal Site
 alias drt='cd sites/all/themes'
+#Drupal download and enable module
+function dre {
+  drush dl $1
+  drush en $1 -y
+  }
