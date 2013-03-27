@@ -1,4 +1,4 @@
 #load aliases
-. ~/dotfiles/bash/env
-. ~/dotfiles/bash/alias
-. ~/dotfiles/bash/config
+. ~/dotFiles/bash/env
+. ~/dotFiles/bash/alias
+. ~/dotFiles/bash/config
