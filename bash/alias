@@ -2,6 +2,12 @@
 #alias fun!
 ###########
 
+# Directory
+alias	md='mkdir -p'
+alias	rd='rmdir'
+alias ..='cd ..'         # Go up one directory
+alias ...='cd ../..'     # Go up two directories
+alias ....='cd ../../..' # Go up two directories
 #short hand
 alias c='clear'
 alias gt='gittower'
@@ -25,30 +31,80 @@ alias ta='tmux attach'
 alias t='tmux'
 #bash
 alias vba='vim ~/dotfiles/bash/alias'
+alias vbe='vim ~/dotfiles/bash/env'
+alias vbc='vim ~/dotfiles/bash/config'
 alias rb='source ~/.bashrc && echo .bashrc has been reloaded'
 #ls 
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 # apps
-alias otx="open -a textual"
-alias ztx="znc; open -a textual"
-alias pb='pianobar'
 alias dr='drush'
 alias v='vim'
-alias g='git'
 alias ed='ed -p:'
-# brew  
-alias bu='brew update'
-alias buu='brew update && brew upgrade'
-alias bd='brew doctor'
-alias bl='brew link'
+# irc
+alias wee='weechat-curses'
+alias otx="open -a textual"
+alias ztx="znc; open -a textual"
 #gem 
 alias gu='sudo gem update'
-alias o='open'
+# brew  
+alias bup='brew update && brew upgrade'
+alias bo='brew outdated'
+alias bs='brew search'
+alias bi='brew install'
+alias brm='brew uninstall'
+alias binf='brew info'
+alias bd='brew doctor'
+alias bl='brew link'
 #mac 
-alias clearCore="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo 'Open With has been rebuilt, Finder will relaunch'"
+alias owfix="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo 'Open With has been rebuilt, Finder will relaunch'"
+alias o='open'
 alias oa='open -a'
+
+#git
+alias gcl='git clone'
+alias ga='git add'
+alias gall='git add .'
+alias g='git'
+alias get='git'
+alias gst='git status'
+alias gs='git status'
+alias gss='git status -s'
+alias gl='git pull'
+alias gup='git fetch && git rebase'
+alias gp='git push'
+alias gpo='git push origin'
+alias gdv='git diff -w "$@" | vim -R -'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
+alias gci='git commit --interactive'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gcount='git shortlog -sn'
+alias gcp='git cherry-pick'
+alias gco='git checkout'
+alias gexport='git archive --format zip --output'
+alias gdel='git branch -D'
+alias gmu='git fetch origin -v; git fetch upstream -v; git merge upstream/master'
+alias gll='git log --graph --pretty=oneline --abbrev-commit'
+
+if [ -z "$EDITOR" ]; then
+    case $OSTYPE in
+      linux*)
+        alias gd='git diff | vim -R -'
+        ;;
+      darwin*)
+        alias gd='git diff | mate'
+        ;;
+      *)
+        alias gd='git diff'
+        ;;
+    esac
+else
+    alias gd="git diff | $EDITOR"
+fi
+
 #youtubedownloader
 alias ytd='youtube-dl'
 alias ytda='youtube-dl --extract-audio --audio-format m4a' 
