@@ -49,7 +49,7 @@ alias ztx="znc; open -a textual"
 #gem 
 alias gu='sudo gem update'
 # brew  
-alias bup='brew update && brew upgrade'
+alias bu='brew update && brew upgrade'
 alias bo='brew outdated'
 alias bs='brew search'
 alias bi='brew install'
@@ -61,6 +61,7 @@ alias bl='brew link'
 alias owfix="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo 'Open With has been rebuilt, Finder will relaunch'"
 alias o='open'
 alias oa='open -a'
+alias ql="qlmanage -p &>/dev/null"
 
 #git
 alias gcl='git clone'
@@ -105,6 +106,9 @@ else
     alias gd="git diff | $EDITOR"
 fi
 
+#gist paste clipboard
+alias pbgist="jist -Ppo"
+
 #youtubedownloader
 alias ytd='youtube-dl'
 alias ytda='youtube-dl --extract-audio --audio-format m4a' 
@@ -126,3 +130,24 @@ function dre {
   drush dl $1
   drush en $1 -y
   }
+#batch changes the extension of all of the specified files in a directory
+chgext() {
+	for file in *.$1 ; do mv "$file" "${file%.$1}.$2" ; done
+}
+#list compress files contents
+lsz() {
+	if [ $# -ne 1 ]
+	then
+		echo "lsz filename.[tar,tgz,gz,zip,etc]"
+		return 1
+	fi
+	if [ -f $1 ] ; then
+		case $1 in
+			*.tar.bz2|*.tar.gz|*.tar|*.tbz2|*.tgz) tar tvf $1;;
+			*.zip)  unzip -l $1;;
+			*)      echo "'$1' unrecognized." ;;
+		esac
+	else
+		echo "'$1' is not a valid file"
+	fi
+}
