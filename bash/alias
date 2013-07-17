@@ -49,7 +49,8 @@ alias ztx="znc; open -a textual"
 #gem 
 alias gu='sudo gem update'
 # brew  
-alias bu='brew update && brew upgrade'
+alias bu='brew update'
+alias buu='brew update && brew upgrade'
 alias bo='brew outdated'
 alias bs='brew search'
 alias bi='brew install'
@@ -115,7 +116,11 @@ alias ytda='youtube-dl --extract-audio --audio-format m4a'
 #SASS & Compass
 alias cwl='compass watch && open -a livereload'
 alias cw='compass watch'
+alias ccw='compass clean && compass watch'
 alias cwd='compass watch --debug-info'
+#Mac dev tools
+alias orl="open /Applications/LiveReload.app"
+alias mamp="open /Applications/MAMP/MAMP.app"
 #SSH
 alias smt='ssh tingreendoor.com@s85361.gridserver.com' 
 #functions
