@@ -1,4 +1,5 @@
 export EDITOR="vim"
+export PATH="$PATH:/usr/local/sbin"
 export PATH=/usr/local/bin:$PATH
 #export PATH="/usr/local/sbin"
 
@@ -6,13 +7,9 @@ export PATH=/usr/local/bin:$PATH
 #export TERM=xterm-256color
 export TERM=screen-256color
 
-platform='unknown'
-unamestr='uname'
+#platform='unknown'
+#unamestr='uname'
 
-#dect mac osx
-#if [[ "$unamestr" == 'Darwin' ]]; then
-  #Drush Settings
-  export PATH="/Applications/MAMP/Library/bin/:$PATH"
-  export DRUSH_PHP=/Applications/MAMP/bin/php/php5.4.4/bin/php
-  export PATH=$PATH:/Applications/MAMP/Library/bin
-#fi
+export PATH="/Applications/MAMP/Library/bin:$PATH"
+export DRUSH_PHP=/Applications/MAMP/bin/php/php5.4.4/bin/php
+export PATH=$PATH:/Applications/MAMP/Library/bin
