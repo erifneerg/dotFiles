@@ -11,5 +11,5 @@ export TERM=screen-256color
 #unamestr='uname'
 
 #export PATH="/Applications/MAMP/Library/bin:$PATH"
-export DRUSH_PHP=/Applications/MAMP/bin/php/php5.4.4/bin/php
+#export DRUSH_PHP=/Applications/MAMP/bin/php/php5.4.19/bin/php
 #export PATH=$PATH:/Applications/MAMP/Library/bin
