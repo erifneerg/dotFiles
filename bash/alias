@@ -41,7 +41,9 @@ alias l='ls -CF'
 # apps
 alias dr='drush'
 alias v='vim'
+alias vi='vim'
 alias ed='ed -p:'
+alias untar='tar xzvf'
 # irc
 alias wee='weechat-curses'
 alias otx="open -a textual"
